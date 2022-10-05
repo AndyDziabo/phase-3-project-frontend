@@ -5,7 +5,6 @@ import Team from "./Team";
 import Draft from "./Draft";
 import Home from "./Home";
 
-
 function App() {
   return (
     <div>
