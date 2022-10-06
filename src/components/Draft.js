@@ -93,10 +93,11 @@ function Draft() {
 
     return(
         <div>
-            <p>Draft page</p>
+            <h1 className="draft-title">Draft page</h1>
             <div className="draft-main">
                 <div className="draft-fav">
-                    <div className="button-show">{`Favorites ${count} of 14 Drafted`}</div>
+                    <div className="fav-title">Favorites</div>
+                    <div className="draft-count">{`${count} of 14 Drafted`}</div>
                     <div className={toggle ? "message" : "choice-hide"}>{`Please draft for the other positions before choosing another ${full}`}</div>
                     <div>
                         <div className="position-list">
@@ -130,14 +131,14 @@ function Draft() {
                     </div>
                 </div>
                 <div className="draft-avail">
-                    Available Players
-                    <div>
+                    <div className="avail-title">Available Players</div>
+                    <div className="avail-drop">
                         <select onChange={handleTeamSelect}>
                             <option value="all">All Teams</option>
                             {teams.map((team) => (<TeamsDropDown team={team} />))}
                         </select>
                     </div>
-                    <div>
+                    <div className="avail-drop">
                     <select onChange={handlePositionSelect}>
                             <option value="all">All Positions</option>
                             {positions.map((position) => (<PositionDropDown position={position} />))}

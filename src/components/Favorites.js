@@ -83,7 +83,20 @@ console.log(draftList)
                 }),
             })
             .then(res => res.json())
+            .then(drafted => console.log(drafted))
+
+            fetch(`http://localhost:9292/is_drafted/${player.id}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    is_drafted: true,
+                }),
+            })
+            .then(res => res.json())
             .then(drafted => onDraft(drafted))
+
         }else{
             setFull(pos)
             console.log("try again")
@@ -92,12 +105,14 @@ console.log(draftList)
 
     return(
         <li className="list-item">
+            <div className="player-row">
             <button onClick={handleDraft} disabled={player.is_drafted || count >=14 || drafted}>{player.is_drafted ? "Drafted" : "Draft"}</button>
-            <span>{player.name} </span>
-            <span> {player.position}</span>
-            <span>{player.status}</span>
-            <span>{player.team_name}</span>
+            <span className="player-name">{player.name} </span>
+            <span className="player-position"> {player.position}</span>
+            <span className="status">{player.status}</span>
+            <span className="team">{`${player.team_location}  ${player.team_name}`}</span>
             <button onClick={handleDelete} disabled={player.is_drafted || drafted}>{player.is_drafted ? "Drafted" : "Remove"}</button>
+            </div>
         </li>
     )
 }

@@ -50,13 +50,13 @@ function AvailablePlayers({ player, user, onAdd }) {
   
 
     return(
-        <li className="list-item">
-            <div>
+        <li>
+            <div className="player-row">
                 <button onClick={handleClick} disabled={player.is_drafted}>{player.is_drafted ? "Drafted" : "Add"}</button>
-                <span>{player.name} </span>
-                <span> {player.position}</span>
-                <span>{player.status}</span>
-                <span>{player.team_name}</span>
+                <span className="player-name">{player.name} </span>
+                <span className="player-position"> {player.position}</span>
+                <span className="status">{player.status}</span>
+                <span className="team">{`${player.team_location}  ${player.team_name}`}</span>
             </div>
             <div className={isTrue ? "choice-show" : "choice-hide"}>
                 <button value="position" onClick={(e) => handleSelect(e.target.value)}>{`Add to ${player.position}`}</button>

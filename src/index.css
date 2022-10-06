@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  background-color: rgb(210, 253, 204);
+  background-color: rgb(255, 255, 255);
 }
 
 
 .nav {
-  background-color: rgb(31, 250, 2);
+  background-color: rgb(22, 190, 0);
   font-size: larger;
   min-height: 50px;
   display: flex;
@@ -13,10 +13,13 @@ body {
 
 .nav span {
   padding: 20px 20px 20px 20px;
+  border-color: rgb(128, 128, 128);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
 }
 
 .nav span:hover {
-  background-color: beige;
+  background-color: rgb(247, 247, 247);
 }
 
 .user {
@@ -48,13 +51,37 @@ body {
   float: left;
 }
 
+.draft-title {
+  width: 100%;
+  text-align: center;
+}
+
+.fav-title {
+  width: 100%;
+  text-align: center;
+  margin: 2px 0px 32px 0px;
+}
+
+.draft-count {
+  margin: 0px 0px 0px 65px;
+}
+
+.avail-title {
+  width: 100%;
+  text-align: center;
+}
+
+.avail-drop {
+  margin: 2px 0px 0px 65px;
+}
+
 .list {
   list-style-type: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 247);
   height: 600px;
   overflow: auto;
   border-style: solid;
-  border-color: rgb(169, 169, 169);
+  border-color: rgb(22, 190, 0);
   border-radius: 5px;
   border-width: 1px;
   padding: 15px;
@@ -63,19 +90,15 @@ body {
 
 .position-list {
   list-style-type: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 247);
   height: 90px;
   overflow: auto;
   border-style: solid;
-  border-color: rgb(169, 169, 169);
+  border-color: rgb(22, 190, 0);
   border-radius: 5px;
   border-width: 1px;
   padding: 8px 15px;
   margin: 5px 15px;
-}
-
-.list-item span {
-  padding: 0px 45px 0px 0px;
 }
 
 .position {
@@ -110,4 +133,44 @@ body {
   border-width: 1px;
   padding: 8px 15px;
   margin: 5px 15px;
+}
+
+.player-row {
+  display: flex;
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: rgb(186, 186, 186);
+}
+
+.player-row button {
+  float: left;
+  width: 70px;
+
+}
+
+.player-name {
+  float: left;
+  width: 21%;
+  margin: 0px 0px 0px 13px;
+}
+
+.player-position {
+  float: left;
+  width: 18%;
+}
+
+.status {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.team {
+  float: left;
+  width: 23%;
+  margin: 0px 0px 0px 18px;
 }
