@@ -67,7 +67,8 @@ function Draft() {
 
     function handleDelete(deleted) {
         console.log(deleted)
-        const updatedFavs = favorites.filter((fav) => fav.id !== deleted.player_id);
+        const updatedFavs = favorites.filter((fav) => fav.player_id !== deleted.player_id);
+        console.log(updatedFavs);
         setFavorites(updatedFavs);
     }
 
