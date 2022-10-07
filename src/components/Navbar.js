@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
+  
     return (
       <div className="nav">
         <span>

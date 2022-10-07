@@ -1,11 +1,16 @@
 body {
   margin: 0;
-  background-color: rgb(210, 253, 204);
+  background-image: url("./components/images/football-stadium.jpg");
+  background-position: 100%;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  background-color: rgb(255, 255, 255);
 }
 
-
 .nav {
-  background-color: rgb(31, 250, 2);
+  background-color: rgb(193, 193, 193);
   font-size: larger;
   min-height: 50px;
   display: flex;
@@ -16,5 +21,202 @@ body {
 }
 
 .nav span:hover {
-  background-color: beige;
+  background-color: rgb(247, 247, 247);
+}
+
+.home-form {
+  display: flex;
+  margin: 50px 0px 40px 25px;
+}
+
+.user {
+  width: 100%;
+  background-color: rgb(142, 122, 55);
+  border-color: rgb(128, 128, 128);
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  font-size: larger;
+  min-height: 25px;
+  display: flex;
+  padding: 5px 10px 0px 30px;
+}
+
+.user-list {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  height: 230px;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(142, 122, 55);
+  border-radius: 8px;
+  border-width: 3px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.draft-main {
+  width: 100%;
+  min-height: 500px;
+}
+
+.draft-fav {
+  /* background-color: aqua; */
+  width: 50%;
+  float: left;
+}
+
+.draft-avail {
+  /* background-color: rgb(237, 229, 71); */
+  width: 50%;
+  float: left;
+}
+
+.draft-title {
+  width: 100%;
+  text-align: center;
+}
+
+.fav-title {
+  width: 100%;
+  text-align: center;
+  margin: 2px 0px 27px 0px;
+}
+
+.fav-sub {
+  min-height: 24px;
+}
+
+.draft-count {
+  display: inline;
+  margin: 20px 0px 20px 50px;
+}
+
+.message {
+  display: inline-flex;
+  list-style-type: none;
+  background-color: rgb(242, 220, 220);
+  width: 70%;
+  border-style: solid;
+  border-color: rgb(255, 22, 22);
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 0px 10px;
+  margin: 0px 15px;
+}
+
+.message-hide {
+  display: inline-flex;
+  visibility: hidden;
+  width: 70%;
+}
+
+.avail-title {
+  width: 100%;
+  text-align: center;
+}
+
+.avail-drop {
+  margin: 2px 0px 0px 65px;
+}
+
+.list {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  height: 600px;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(142, 122, 55);
+  border-radius: 8px;
+  border-width: 3px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.list-team {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  min-height: 100px;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(142, 122, 55);
+  border-radius: 8px;
+  border-width: 3px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.position-list {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  height: 90px;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(142, 122, 55);
+  border-radius: 8px;
+  border-width: 3px;
+  padding: 8px 15px;
+  margin: 5px 15px;
+}
+
+.position {
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+.choice-show {
+  display: block;
+}
+
+.choice-hide {
+  display: none;
+}
+
+.button-show {
+  display: inline;
+}
+
+.player-row {
+  display: flex;
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: rgb(186, 186, 186);
+}
+
+.player-row button {
+  float: left;
+  width: 70px;
+
+}
+
+.player-name {
+  float: left;
+  width: 21%;
+  margin: 0px 0px 0px 13px;
+}
+
+.player-position {
+  float: left;
+  width: 18%;
+}
+
+.status {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.team {
+  float: left;
+  width: 23%;
+  margin: 0px 0px 0px 18px;
+}
+
+.team-name {
+  text-align: center;
 }
