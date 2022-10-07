@@ -34,6 +34,19 @@ body {
   padding: 5px 10px 0px 30px;
 }
 
+.user-list {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  height: 230px;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(22, 190, 0);
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 15px;
+  margin: 15px;
+}
+
 .draft-main {
   width: 100%;
   min-height: 500px;
@@ -59,11 +72,37 @@ body {
 .fav-title {
   width: 100%;
   text-align: center;
-  margin: 2px 0px 32px 0px;
+  margin: 2px 0px 27px 0px;
+}
+
+.fav-sub {
+  /* background-color: brown; */
+  min-height: 24px;
 }
 
 .draft-count {
-  margin: 0px 0px 0px 65px;
+  display: inline;
+  /* background-color: aqua; */
+  margin: 20px 0px 20px 50px;
+}
+
+.message {
+  display: inline-flex;
+  list-style-type: none;
+  background-color: rgb(242, 220, 220);
+  width: 70%;
+  border-style: solid;
+  border-color: rgb(255, 22, 22);
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 0px 10px;
+  margin: 0px 15px;
+}
+
+.message-hide {
+  display: inline-flex;
+  visibility: hidden;
+  width: 70%;
 }
 
 .avail-title {
@@ -118,21 +157,6 @@ body {
 
 .button-show {
   display: inline;
-}
-
-.message {
-  display: inline-flex;
-  list-style-type: none;
-  background-color: rgb(255, 255, 255);
-  height: 20px;
-  width: 200px;
-  overflow: auto;
-  border-style: solid;
-  border-color: rgb(169, 169, 169);
-  border-radius: 5px;
-  border-width: 1px;
-  padding: 8px 15px;
-  margin: 5px 15px;
 }
 
 .player-row {

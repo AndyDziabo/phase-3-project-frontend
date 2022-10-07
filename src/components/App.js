@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 import NavBar from "./Navbar";
 import About from "./About";
 import Team from "./Team";
@@ -6,6 +7,7 @@ import Draft from "./Draft";
 import Home from "./Home";
 
 function App() {
+  const [currentUser, setCurrentUser] = useState('');
   return (
     <div>
       <NavBar />
@@ -17,10 +19,10 @@ function App() {
           <Team />
         </Route>
         <Route exact path="/draft">
-          <Draft />
+          <Draft currentUser={currentUser} />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home setCurrentUser={setCurrentUser} />
         </Route>
       </Switch>
     </div>

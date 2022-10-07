@@ -1,6 +1,6 @@
-import React, { useEffect, useState} from "react";
+import React, { useState } from "react";
 
-function AvailablePlayers({ player, user, onAdd }) {
+function AvailablePlayers({ player, onAdd }) {
     const [isTrue, setIsTrue] = useState(false);
     const [btnTrue, setBtnTrue] = useState(false);
 
@@ -22,7 +22,6 @@ function AvailablePlayers({ player, user, onAdd }) {
         let defense = false;
 
         setIsTrue(false)
-        console.log(e)
         if(e === 'flex'){
             flex = true;
         }else if(e === 'defense'){
