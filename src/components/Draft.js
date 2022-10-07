@@ -103,7 +103,7 @@ function Draft({ currentUser }) {
 
     return(
         <div>
-            <h1 className="draft-title">{`${currentUser.name}'s Draft page`}</h1>
+            <h1 className="draft-title">{currentUser.name ? `${currentUser.name}'s Draft page` : "Draft Page"}</h1>
             <div className="draft-main">
                 <div className="draft-fav">
                     <div className="fav-title">Favorites</div>

@@ -9,7 +9,7 @@ function HomeCard({ user, setCurrentUser }) {
         <li>
             <div className="player-row">
                 <span className="player-name">{user.name} </span>
-                <span>{user.team_name}</span>
+                <span className="team">{user.team_name}</span>
                 <button onClick={handleUser}>Set User</button>
             </div>
         </li>

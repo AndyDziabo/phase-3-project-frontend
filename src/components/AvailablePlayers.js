@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AvailablePlayers({ player, onAdd }) {
+function AvailablePlayers({ player, user, onAdd }) {
     const [isTrue, setIsTrue] = useState(false);
     const [btnTrue, setBtnTrue] = useState(false);
 
@@ -36,7 +36,7 @@ function AvailablePlayers({ player, onAdd }) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                user_id: 1,
+                user_id: user.id,
                 player_id: player.id,
                 flex: flex,
                 defense: defense,
@@ -60,7 +60,6 @@ function AvailablePlayers({ player, onAdd }) {
             <div className={isTrue ? "choice-show" : "choice-hide"}>
                 <button value="position" onClick={(e) => handleSelect(e.target.value)}>{`Add to ${player.position}`}</button>
                 <button value="flex" onClick={(e) => handleSelect(e.target.value)}>Add to Flex</button>
-                <button value="defense" onClick={(e) => handleSelect(e.target.value)} className={btnTrue ? "button-show" : "choice-hide"}>Add to Defense</button>
             </div>
         </li>
     )

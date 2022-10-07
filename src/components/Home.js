@@ -33,25 +33,9 @@ function Home({ setCurrentUser}) {
         .then(newUser => setUsers([...users, newUser]))
     }
 
-    // function createTeam(newUser) {
-    //     fetch("http://localhost:9292/add_team", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({
-    //             name: newUser.team_name,
-    //             user_id: newUser.id,
-    //         }),
-    //     })
-    //     .then(res => res.json())
-    //     .then(newTeam => console.log(newTeam))
-    //     setUsers([...users, newUser])
-    // }
     return(
         <div>
-            <p>Home page</p>
-            <div>
+            <div className='home-form'>
                 <form onSubmit={handleUser}>
                     <input
                         type="text"
@@ -67,7 +51,7 @@ function Home({ setCurrentUser}) {
                 </form>
             </div>
             <div>
-                <div>{`${count} of 10 Users`}</div>
+                <div className="draft-count">{`${count} of 10 Users`}</div>
                 <div>
                     <ul className="user-list">
                         {users.map((user) => (<HomeCard key={user.id} user={user} setCurrentUser={setCurrentUser} />))}
