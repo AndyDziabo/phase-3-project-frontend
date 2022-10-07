@@ -18,3 +18,18 @@ body {
 .nav span:hover {
   background-color: beige;
 }
+
+.about_us_header{
+  text-align: center;
+}
+
+.about_title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.about_paragragh{
+ text-align: center;
+ font-size: 25px;
+ 
+}
