@@ -32,7 +32,6 @@ function Favorites({ fav, pos, user, onDelete, onDraft, count, setFull, team }) 
                     if(p.id === d.player_id){
                         if(d.flex === true){
                             p.position = "Flex"
-                            console.log(p)
                             return p
                         }else if(d.defense === true){
                             p.position = "Defense"
@@ -70,6 +69,13 @@ function Favorites({ fav, pos, user, onDelete, onDraft, count, setFull, team }) 
         }
 
         if(result === false){
+            let setDefense;
+            if(pos === "Defense"){
+                setDefense = true;
+            }else{
+                setDefense = false;
+            }
+
             fetch("http://localhost:9292/draft_player", {
                 method: "POST",
                 headers: {
@@ -79,6 +85,10 @@ function Favorites({ fav, pos, user, onDelete, onDraft, count, setFull, team }) 
                     name: user.team_name,
                     user_id: user.id,
                     player_id: player.id,
+                    starter: false,
+                    position: player.position,
+                    flex: false,
+                    defense: setDefense,
                 }),
             })
             .then(res => res.json())
