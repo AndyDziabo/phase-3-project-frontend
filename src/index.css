@@ -54,6 +54,14 @@ body {
   margin: 15px;
 }
 
+.user-name {
+  width: 400px;
+}
+
+.drop-down {
+  margin-left: 30px;
+}
+
 .draft-main {
   width: 100%;
   min-height: 500px;

@@ -10,13 +10,13 @@ function NavBar() {
         </NavLink>
         </span>
         <span>
-        <NavLink to="/team" exact>
-          Team
+        <NavLink to="/draft" exact>
+          Draft
         </NavLink>
         </span>
         <span>
-        <NavLink to="/draft" exact>
-          Draft
+        <NavLink to="/team" exact>
+          Team
         </NavLink>
         </span>
         <span>

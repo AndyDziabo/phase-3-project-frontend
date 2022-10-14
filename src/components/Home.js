@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import HomeCard from './HomeCard';
 
-function Home({ setCurrentUser}) {
-    const [users, setUsers] = useState([]);
+function Home({ setCurrentUser, setUsers, users }) {
     const [count, setCount] = useState(0);
 
     useEffect(() => {

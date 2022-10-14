@@ -9,10 +9,12 @@ import User from "./User";
 
 function App() {
   const [currentUser, setCurrentUser] = useState([]);
+  const [users, setUsers] = useState([]);
+
   return (
     <div>
       <NavBar />
-      <User currentUser={currentUser} />
+      <User setCurrentUser={setCurrentUser} currentUser={currentUser} users={users} />
       <Switch>
         <Route exact path="/about">
           <About />
@@ -24,7 +26,7 @@ function App() {
           <Draft currentUser={currentUser} />
         </Route>
         <Route exact path="/">
-          <Home setCurrentUser={setCurrentUser} />
+          <Home setCurrentUser={setCurrentUser} setUsers={setUsers} users={users} />
         </Route>
       </Switch>
     </div>
