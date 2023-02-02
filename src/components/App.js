@@ -12,7 +12,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   return (
-    <div>
+    <div className="main">
       <NavBar />
       <User setCurrentUser={setCurrentUser} currentUser={currentUser} users={users} />
       <Switch>
