@@ -156,6 +156,20 @@ body {
   margin: 15px;
 }
 
+.about {
+  list-style-type: none;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  /* height: 600px; */
+  /* overflow: auto; */
+  border-style: solid;
+  border-color: rgb(142, 122, 55);
+  border-radius: 8px;
+  border-width: 3px;
+  padding: 15px;
+  margin: 250px 250px 0px 250px;
+}
+
 .list-team {
   list-style-type: none;
   background-color: rgb(247, 247, 247);
