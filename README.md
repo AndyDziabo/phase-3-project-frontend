@@ -2,7 +2,7 @@
 
 Fantasy Football app lets users create teams to go head to head with each other. Users can make a list of thier favorite players that they would like to draft. Once the user drafts all their players, they can goto their team section where they can control which players they start and which players they leave on the bench.
 </br></br>
-To view a demo video of the app visit <a href="https://andrewdziabo.dev/" target="_blank">AndrewDziabo.dev</a> and goto the projects section.
+To view a video demo of the app visit <a href="https://andrewdziabo.dev/" target="_blank">AndrewDziabo.dev</a> and goto the projects section.
 
 
 <h2>How to set up</h2>
