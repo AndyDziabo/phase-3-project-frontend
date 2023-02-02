@@ -5,22 +5,22 @@ function NavBar() {
     return (
       <div className="nav">
         <span>
-        <NavLink to="/" exact>
+        <NavLink className="nav-link" to="/" exact>
           Home
         </NavLink>
         </span>
         <span>
-        <NavLink to="/team" exact>
-          Team
-        </NavLink>
-        </span>
-        <span>
-        <NavLink to="/draft" exact>
+        <NavLink className="nav-link" to="/draft" exact>
           Draft
         </NavLink>
         </span>
         <span>
-        <NavLink to="/about" exact>
+        <NavLink className="nav-link" to="/team" exact>
+          Team
+        </NavLink>
+        </span>
+        <span>
+        <NavLink className="nav-link" to="/about" exact>
           About
         </NavLink>
         </span>

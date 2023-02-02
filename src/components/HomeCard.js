@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 
 function HomeCard({ user, setCurrentUser }) {
     function handleUser() {
